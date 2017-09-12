@@ -1,11 +1,18 @@
 ---
 ---
 
+// The saas load paths are defined in _config.yml
+
+// Import from the _saas directory
 @import "variables";
+// Import from the node_modules directory
 @import "bootstrap/scss/bootstrap";
 
 .content {
   font-size: $custom-font-size;
 }
 
+.nav-item {
+  font-size: $custom-nav-item-font-size;
+}
 

@@ -5,34 +5,27 @@
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
     <!-- Menubar -->
-    <nav class="navbar navbar-inverse navbar-static-top">
+    <nav class="navbar navbar-toggleable-md navbar-light" style="background: #348fad;">
         <div class="container">
-            <!-- This keeps the margins nice -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="{{ site.url }}/"><img src="{{ page.assets_dir }}/img/logo_2.svg" alt="ViTables" id="logo"></a>
             </div>
-            <!-- /.navbar-header -->
-            <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-                <ul class="nav navbar-nav">
-                    <li><a href="/Development">Development</a></li>
-                    <li><a href="/Download">Download</a></li>
-                    <li><a href="/Docs">Documentation</a></li>
-                    <li><a href="/Screenshots">Screenshots</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right"></ul>
+            <div id="bs-navbar" class="collapse navbar-collapse justify-content-end">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/Development">Development</a>
+                    <a class="nav-item nav-link" href="/Download">Download</a>
+                    <a class="nav-item nav-link" href="/Docs">Documentation</a>
+                    <a class="nav-item nav-link" href="/Screenshots">Screenshots</a>
+                </div>
             </div>
-        <!-- /.navbar-collapse -->
         </div>
-    <!-- /.container -->
     </nav><!-- End of Menubar -->
-    <div class="container" id="content" role="main">
+    <div class="container" id="content" role="main" style="padding-top:20px">
         {{ content }}
+        <hr>
         {% include footer.html %}
     </div>
     <script src="{{ page.assets_dir }}/jquery/jquery.min.js"></script>

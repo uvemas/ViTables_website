@@ -20,10 +20,11 @@ If you are interested in how the *ViTables* development is going on you can visi
  
 - view [project activity statistics](https://github.com/uvemas/ViTables/graphs/contributors)
 
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>Feature Requests, Comments and Bug Reports</p>
-<p class="last"><em>Your feedback is important!</em> I'd really like to hear what you are doing with <em>ViTables</em>. It is the
-best way to adapt it to your needs. If you have feature requests, comments, kudos or you've found a bug, please
-send a message to the <a class="reference external" href="https://groups.google.com/forum/#!forum/vitables-users">ViTables Users Group</a>.</p>
+<div class="card" style="margin-bottom: 30px;">
+    <div class="card-header">Feature Requests, Comments and Bug Reports</div>
+    <div class="card-block">
+        <p class="card-text"><em>Your feedback is important!</em> I'd really like to hear what you are doing with <em>ViTables</em>. It is the
+        best way to adapt it to your needs. If you have feature requests, comments, kudos or you've found a bug, please
+        send a message to the <a class="reference external" href="https://groups.google.com/forum/#!forum/vitables-users">ViTables Users Group</a>.</p>
+    </div>
 </div>
