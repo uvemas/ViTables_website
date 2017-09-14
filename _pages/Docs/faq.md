@@ -2,7 +2,7 @@
 title: FAQ
 permalink: /Docs/faq.html
 id: docs_faq
-date: 2017-08-27
+date: 2017-09-14
 description: "Questions and Answers commonly asked about ViTables: license, bugs, latest versions, Anaconda and so on."
 tags: ViTables FAQ
 assets_dir: ../assets
@@ -38,17 +38,25 @@ You should report it, of course :-). Please, send your report with the
 
 If you want to run the development version of *ViTables*, first of all
 you have to clone it from the git repository. For instance
-        
-        $ git clone http://github.com/uvemas/ViTables.git vitables_tip
+
+<div class="card card-info" style="margin-bottom: 1em;">
+  <div class="card-block">
+    $ git clone http://github.com/uvemas/ViTables.git vitables_tip
+  </div>
+</div>
 
 will download the latest revision and put it in the `vitables_tip` directory.
 You can use it as is or you can build the *ViTables* package from sources and
 install it. Although packaging is not difficult it can be tricky because you
 may need to install the Sphinx documentation system. So packaging is not
 recommended. Instead, from the top level directory do the following
-    
-        $ cp scripts/start.py run_vitables.py
-        $ python run_vitables.py
+
+<div class="card card-info" style="margin-bottom: 1em;">
+  <div class="card-block">
+    $ cp scripts/start.py run_vitables.py<br>
+    $ python run_vitables.py
+  </div>
+</div>
 
 and *ViTables* should start. Beware that the HTML User's Guide will not be
 available unless you build it before running *ViTables*.
@@ -63,7 +71,7 @@ Of course, you can. After installation, just create a Desktop shortcut as you us
 Make sure that it points to the *vitables* executable. The only tricky thing is to give a nice icon to the
 shortcut.
 
-On Windows the icon file is `icons\\vitables.ico` and can be located in the installation folder.
+On Windows the icon file is `icons\vitables.ico` and can be located in the installation folder.
 
 On Linux it is a bit more difficult because the icons are not included in the package (tarball or wheel). So you
 have to download them from the repository. In particular you need the `unixapp` folder. There you will find
@@ -76,30 +84,26 @@ If you have problems with the shortcut creation there are lots of tutorials in t
 
 ## Can I use <em>ViTables</em> with Anaconda3?
 
-Yes, you can. Three different installation ways are available. The most convenient is, of course, install the
-*ViTables* package from conda-channel (I assume you are on a Windows machine here)
+Yes, you can. Basically two installation ways are available. The most convenient is, of course, install the
+*ViTables* package from conda-channel (I assume you are on a Windows machine here and the `Scripts` folder is in your `PATH`).
+You can install and run with
 
-    (Anaconda3) > conda install -c conda-forge vitables=3.0.0
+<div class="card card-info" style="margin-bottom: 1em;">
+  <div class="card-block">
+    (Anaconda3) > conda install -c conda-forge vitables=3.0.0<br>
+    (Anaconda3) > vitables
+  </div>
+</div>
 
-Afterwards a *ViTables* executable should exist in the `Scripts` directory and can be launched by issuing the command::
+If this fails, you can install *ViTables* from sources. Download and untar the tarball (or clone the `GitHub` repo),
+go to the root directory and proceed as you do in a typical installation from sources
 
-    (Anaconda3) > some-path\Anaconda3\Scripts\vitables
-
-If this fails, you can install *ViTables* from sources. Download and untar the tarball (or clone the `GitHub` repo) and
-go to the root directory. From there you can create an environment for *ViTables* with the `environment.yml` file
-
-    (Anaconda3) > conda env create -n vitables -f environment.yml
-    (Anaconda3) > some-path\Anaconda3\Scripts\activate vitables
-    (vitables) >
-
-After installation you can execute the program easily
-
-    (vitables) > vitables
-  
-Finally you can do a typical installation from sources
-
-    (Anaconda3) > python setup.py install
-    (Anaconda3) > some-path\Anaconda3\Scripts\vitables
+<div class="card card-info" style="margin-bottom: 1em;">
+  <div class="card-block">
+    (Anaconda3) > python setup.py install<br>
+    (Anaconda3) > vitables
+  </div>
+</div>
 
 Caveat emptor: as you know *ViTables* depends on `PyQt5`. Unfortunately the `pip` installed `PyQt5` package and the analogous
 package provided by `Anaconda3` are in conflict with each other (you can read more about this 
@@ -107,6 +111,7 @@ package provided by `Anaconda3` are in conflict with each other (you can read mo
 these advices:
 
 - if you have installed the package from the conda-forge channel, remove the `PyQt5` dependency from
-  `Anaconda3\\pkgs\\vitables-3.0.0-0\\Lib\\site-packages\\ViTables-3.0.0.egg-info\\requires.txt`
+  `Anaconda3\pkgs\vitables-3.0.0-0\Lib\site-packages\ViTables-3.0.0.egg-info\requires.txt`
 - if you are going to install from sources, *before you proceed*, remove the `PyQt5` dependency from the `install_requires` line in the
   `setup.py` file.
+
