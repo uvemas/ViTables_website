@@ -16,3 +16,11 @@
   font-size: $custom-nav-item-font-size;
 }
 
+.navbar-nav .nav-item:hover,
+.navbar-nav .active {
+border-radius:0px;
+border-bottom-width: 4px;
+border-bottom-style: solid;
+border-bottom-color: #02709e;
+}
+

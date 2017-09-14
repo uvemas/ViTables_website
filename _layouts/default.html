@@ -5,7 +5,7 @@
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
     <!-- Menubar -->
-    <nav class="navbar navbar-toggleable-md navbar-light" style="background: #348fad;">
+    <nav class="navbar navbar-toggleable-md navbar-light" style="background-color: #e3f2fd;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,11 +15,33 @@
             </div>
             <div id="bs-navbar" class="collapse navbar-collapse justify-content-end">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="/">Home</a>
-                    <a class="nav-item nav-link" href="/Development">Development</a>
-                    <a class="nav-item nav-link" href="/Download">Download</a>
-                    <a class="nav-item nav-link" href="/Docs">Documentation</a>
-                    <a class="nav-item nav-link" href="/Screenshots">Screenshots</a>
+                  {% assign inactive = "nav-item nav-link" %}
+                  {% assign active = "nav-item nav-link active" %}
+                  {% if page.id == "index" %}
+                    <a class="{{ active }}" href="/">Home</a>
+                  {% else %}
+                    <a class="{{ inactive }}" href="/">Home</a>
+                  {% endif %}
+                  {% if page.id == "development_index" %}
+                    <a class="{{ active }}" href="/Development">Development</a>
+                  {% else %}
+                    <a class="{{ inactive }}" href="/Development">Development</a>
+                  {% endif %}
+                  {% if page.id == "download_index" %}
+                    <a class="{{ active }}" href="/Download">Download</a>
+                  {% else %}
+                    <a class="{{ inactive }}" href="/Download">Download</a>
+                  {% endif %}
+                  {% if page.id == "docs_index" %}
+                    <a class="{{ active }}" href="/Docs">Documentation</a>
+                  {% else %}
+                    <a class="{{ inactive }}" href="/Docs">Documentation</a>
+                  {% endif %}
+                  {% if page.id == "screenshots_index" %}
+                    <a class="{{ active }}" href="/Screenshots">Screenshots</a>
+                  {% else %}
+                    <a class="{{ inactive }}" href="/Screenshots">Screenshots</a>
+                  {% endif %}
                 </div>
             </div>
         </div>
