@@ -5,9 +5,11 @@
 
 // Import from the _saas directory
 @import "variables";
+
 // Import from the node_modules directory
 @import "bootstrap/scss/bootstrap";
 
+// Customise nav-item and content font sizes
 .content {
   font-size: $custom-font-size;
 }
@@ -16,11 +18,25 @@
   font-size: $custom-nav-item-font-size;
 }
 
+// Underline the active nav-item
 .navbar-nav .nav-item:hover,
 .navbar-nav .active {
 border-radius:0px;
 border-bottom-width: 4px;
 border-bottom-style: solid;
 border-bottom-color: #02709e;
+}
+
+// Do not center the brand image with xs screens
+@include media-breakpoint-down(xs) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Remove the border from the toggler button
+.navbar-toggler {
+  border: none;
 }
 
