@@ -20,5 +20,11 @@ If you are interested in how the *ViTables* development is going on you can visi
  
 - view [project activity statistics](https://github.com/uvemas/ViTables/graphs/contributors)
 
-{% include requests_card.html %}
-
+<div class="card" style="margin-bottom: 30px;">
+    <div class="card-header">Feature Requests, Comments and Kudos</div>
+    <div class="card-block card-info">
+        <p class="card-text"><em>Your feedback is important!</em> I'd really like to hear what you are doing with <em>ViTables</em>. It is the
+        best way to adapt it to your needs. If you have feature requests, comments or kudos, please
+        send a message to the <a class="reference external" href="https://groups.google.com/forum/#!forum/vitables-users">ViTables Users Group</a>.</p>
+    </div>
+</div>

@@ -24,7 +24,7 @@
 border-radius:0px;
 border-bottom-width: 4px;
 border-bottom-style: solid;
-border-bottom-color: #02709e;
+border-bottom-color: $custom-border-color;
 }
 
 // Do not center the brand image with xs screens
@@ -38,5 +38,11 @@ border-bottom-color: #02709e;
 // Remove the border from the toggler button
 .navbar-toggler {
   border: none;
+}
+
+// Customise card-block border
+.card-faq {
+  border-left: 4px solid $custom-border-color;
+  font-family: $font-family-monospace;
 }
 

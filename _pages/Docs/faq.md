@@ -40,7 +40,7 @@ If you want to run the development version of *ViTables*, first of all
 you have to clone it from the git repository. For instance
 
 <div class="card card-info" style="margin-bottom: 1em;">
-  <div class="card-block">
+  <div class="card-block card-faq">
     $ git clone http://github.com/uvemas/ViTables.git vitables_tip
   </div>
 </div>
@@ -52,7 +52,7 @@ may need to install the Sphinx documentation system. So packaging is not
 recommended. Instead, from the top level directory do the following
 
 <div class="card card-info" style="margin-bottom: 1em;">
-  <div class="card-block">
+  <div class="card-block card-faq">
     $ cp scripts/start.py run_vitables.py<br>
     $ python run_vitables.py
   </div>
@@ -89,7 +89,7 @@ Yes, you can. Basically two installation ways are available. The most convenient
 You can install and run with
 
 <div class="card card-info" style="margin-bottom: 1em;">
-  <div class="card-block">
+  <div class="card-block card-faq">
     (Anaconda3) > conda install -c conda-forge vitables=3.0.0<br>
     (Anaconda3) > vitables
   </div>
@@ -99,7 +99,7 @@ If this fails, you can install *ViTables* from sources. Download and untar the t
 go to the root directory and proceed as you do in a typical installation from sources
 
 <div class="card card-info" style="margin-bottom: 1em;">
-  <div class="card-block">
+  <div class="card-block card-faq">
     (Anaconda3) > python setup.py install<br>
     (Anaconda3) > vitables
   </div>
