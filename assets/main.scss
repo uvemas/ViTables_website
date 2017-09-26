@@ -14,12 +14,12 @@
   font-size: $custom-font-size;
 }
 
-.nav-item {
-  font-size: $custom-nav-item-font-size;
+.nav-link {
+  font-size: $custom-nav-link-font-size;
 }
 
 // Underline the active nav-item
-.navbar-nav .nav-item:hover,
+.navbar-nav .nav-link:hover,
 .navbar-nav .active {
 border-radius:0px;
 border-bottom-width: 4px;
