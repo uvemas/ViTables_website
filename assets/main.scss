@@ -46,3 +46,8 @@ border-bottom-color: $custom-border-color;
   font-family: $font-family-monospace;
 }
 
+// Replace obsolete frameborder attribute in screenshots page
+iframe {
+  border: 0;
+}
+
