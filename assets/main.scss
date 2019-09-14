@@ -2,12 +2,14 @@
 ---
 
 // The saas load paths are defined in _config.yml
+// When importing a file its .scss extension is removed
+// so @import "saas_file" will import saas_file.scss
 
 // Import from the _saas directory
 @import "variables";
 
-// Import from the node_modules directory
-@import "bootstrap/scss/bootstrap";
+// Import from the vendor/bundle/ruby/2.5.0/gems directory
+@import "bootstrap-4.3.1/assets/stylesheets/_bootstrap";
 
 // Customise nav-item and content font sizes
 .content {
