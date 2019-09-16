@@ -1,6 +1,6 @@
 ---
 title: Screenshots
-permalink: /Screenshots/
+permalink: /Screenshots/index.html
 id: screenshots_index
 date: 2017-08-27
 description: "Screenshots showing some interesting functionalities of ViTables, like table queries, plugins or management of attributes."

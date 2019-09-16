@@ -57,7 +57,7 @@
     <script src="{{ page.assets_dir }}/jquery/jquery.min.js"></script>
     <script src="{{ page.assets_dir }}/tether/js/tether.min.js"></script>
     <script src="{{ page.assets_dir }}/js/bootstrap.bundle.min.js"></script>
-    {% if "{{ page.id }} == screenshots_index" %}
+    {% if page.id == "screenshots_index" %}
         {% include lightbox.html %}
     {% endif %}
 </body>
