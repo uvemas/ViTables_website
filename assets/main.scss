@@ -43,6 +43,9 @@ border-bottom-color: $custom-border-color;
 }
 
 // Customise card-block border
+.card-block {
+  margin: $custom-cb-margin;
+}
 .card-faq {
   border-left: 4px solid $custom-border-color;
   font-family: $font-family-monospace;
