@@ -1,6 +1,6 @@
 ---
 title: Overview
-permalink: /index.html
+permalink: /
 id: index
 date: 2017-08-27
 description: "ViTables 3.0 is a GUI for browsing files in PyTables/HDF5 format. Enjoy with it navigating smoothly tables with hundreds of millions of rows."

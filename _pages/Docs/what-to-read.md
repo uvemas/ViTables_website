@@ -1,6 +1,6 @@
 ---
 title: What to Read
-permalink: /Docs/index.html
+permalink: /Docs/
 id: docs_index
 date: 2017-08-27
 description: "Here you can find the available documentation about ViTables: FAQ, Users' Guide (in PDF format) and testimonials."

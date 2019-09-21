@@ -1,6 +1,6 @@
 ---
 title: Development
-permalink: /Development/index.html
+permalink: /Development/
 id: development_index
 date: 2017-08-27
 description: "Information about ViTables project development: GitHub repository, bugs tracker, statistics and ViTables Users group."

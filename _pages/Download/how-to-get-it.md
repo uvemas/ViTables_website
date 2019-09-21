@@ -1,6 +1,6 @@
 ---
 title: How to get it
-permalink: /Download/index.html
+permalink: /Download/
 id: download_index
 date: 2017-08-27
 description: "Download ViTables 3.0 from here in a variety of formats: source packages, wheels and conda packages. Or get the latest sources from the repo."
