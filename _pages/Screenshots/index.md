@@ -5,8 +5,7 @@ date: 2017-08-27
 description: "Screenshots showing some interesting functionalities of ViTables, like table queries, plugins or management of attributes."
 tags: ViTables screenshots video
 assets_dir: /assets
-rss_file: /rss.xml
-vimeoId: "222206308"
+rss_file: /feed.xml
 ---
 
 # Screenshots and Videos

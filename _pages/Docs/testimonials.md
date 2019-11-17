@@ -1,6 +1,6 @@
 ---
 title: Testimonials
-permalink: docs/testimonials
+permalink: Docs/testimonials
 id: docs_testimonials
 date: 2017-08-27
 description: "Find out what people is saying about ViTables."

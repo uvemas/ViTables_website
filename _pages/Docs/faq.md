@@ -1,6 +1,6 @@
 ---
 title: FAQ
-permalink: docs/faq
+permalink: Docs/faq
 id: docs_faq
 date: 2017-09-14
 description: "Questions and Answers commonly asked about ViTables: license, bugs, latest versions, Anaconda and so on."

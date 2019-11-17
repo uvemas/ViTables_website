@@ -25,6 +25,14 @@ const site = {
   site_generator: 'Metalsmith',
   generatorurl: 'https://metalsmith.io/'
 };
+
+// Permalinks configuration
+const permalinkConfig = {
+  pattern: ':title',
+  slug: {
+    lower: false
+  }
+};
  
 // Filter for the layout engine
 const year = function() {
@@ -53,8 +61,10 @@ const collectionConfig = {
 
 // RSS feed configuration
 const feedConfig = {
+  title: site.site_title,
   site_url: site.site_url,
-  collection: 'pages'
+  collection: 'pages',
+  destination: 'feed.xml'
 };
 
 // Sitemap configuration
@@ -94,7 +104,7 @@ Metalsmith(__dirname)
   .use(mdit({html: true}))
 //  .use(inplace({engine: 'nunjucks',
 //            	pattern: '**/*.njk'}))
-  .use(permalinks({pattern: ':title'}))
+  .use(permalinks(permalinkConfig))
   .use(layouts(layoutConfig))
   .use(assets({dest: 'assets'}))
   .use(sass(sassConfig))
