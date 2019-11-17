@@ -1,6 +1,6 @@
 ---
 title: How to get it
-permalink: /Download/
+permalink: download
 id: download_index
 date: 2017-08-27
 description: "Download ViTables 3.0 from here in a variety of formats: source packages, wheels and conda packages. Or get the latest sources from the repo."
@@ -33,7 +33,7 @@ package manager in order to find and install *ViTables*.
 Other sources
 -------------
 Last but not least, *ViTables* is included in a couple of scientific-oriented
-Python distributions, [WinPython](http://winpython.sourceforge.net) and
+Python distributions, [WinPython](https://winpython.github.io/) and
 [Python(x,y)](http://python-xy.github.io/).
 Also you can get the Windows binaries (and many other binaries for interesting
 software) from Christoph Gohlke's [website](http://www.lfd.uci.edu/~gohlke/pythonlibs/#vitables).

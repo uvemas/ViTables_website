@@ -1,25 +1,29 @@
 ---
 title: FAQ
-permalink: /Docs/faq.html
+permalink: docs/faq
 id: docs_faq
 date: 2017-09-14
 description: "Questions and Answers commonly asked about ViTables: license, bugs, latest versions, Anaconda and so on."
 tags: ViTables FAQ
-assets_dir: ../assets
-rss_file: ../rss.xml
+assets_dir: /assets
+rss_file: /rss.xml
 ---
 
 # FAQ
-{:.no_toc}
+- [How is <em>ViTables</em> licensed?](#license)
+- [Oops! I've got a problem. How can I get support?](#support)
+- [I've found a bug or I want to request a new feature. What should I do?](#bug-feature)
+- [How can I use the latest revision from the git repository?](#latest)
+- [Are there graphical installers for Windows and Mac OS X platforms?](#installers)
+- [But can I launch <em>ViTables</em> from my Desktop?](#desktop)
+- [Can I use <em>ViTables</em> with Anaconda3?](#anaconda3)
 
-- {:toc} must be placed immediately after a list item
-{:toc}
-
-
+<a name="license"><a/>
 ## How is <em>ViTables</em> licensed?
 
 It has a [GPLv3](http://www.gnu.org/licenses/gpl.html) license.
 
+<a name="support"></a>
 ## Oops! I've got a problem. How can I get support?
 
 It's always worth to check the messages posted to the
@@ -29,11 +33,13 @@ to get your questions answered. You can search the list using its web interface 
 question I strongly recommended you to subscribe to the users' group and ask for help there.
 Probably some subscriber (*ViTables* developer or user) will be able to help you. 
 
+<a name="bug-feature"></a>
 ## I've found a bug or I want to request a new feature. What should I do?
 
 You should report it, of course :-). Please, send your report with the
 [bug tracker](https://github.com/uvemas/ViTables/issues).
 
+<a name="latest"></a>
 ## How can I use the latest revision from the git repository?
 
 If you want to run the development version of *ViTables*, first of all
@@ -61,10 +67,12 @@ recommended. Instead, from the top level directory do the following
 and *ViTables* should start. Beware that the HTML User's Guide will not be
 available unless you build it before running *ViTables*.
 
+<a name="installers"></a>
 ## Are there graphical installers for Windows and Mac OS X platforms?
 
 No, there aren't.
 
+<a name="desktop"></a>
 ## But can I launch <em>ViTables</em> from my Desktop?
 
 Of course, you can. After installation, just create a Desktop shortcut as you usually do on your platform.
@@ -82,6 +90,7 @@ If you have problems with the shortcut creation there are lots of tutorials in t
 [this for Windows](http://www.thewindowsclub.com/create-desktop-shortcut-windows-10) or
 [this for Ubuntu Linux](https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles).
 
+<a name="anaconda3"></a>
 ## Can I use <em>ViTables</em> with Anaconda3?
 
 Yes, you can. Basically two installation ways are available. The most convenient is, of course, install the

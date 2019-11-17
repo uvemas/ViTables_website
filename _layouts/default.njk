@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
-{% include head.html %}
+{% include "_includes/head.njk" %}
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
@@ -11,54 +11,56 @@
                 <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.url }}/"><img src="{{ page.assets_dir }}/img/logo_2.svg" width="200" alt="ViTables" id="logo"></a>
+                <a class="navbar-brand" href="{{ site_url }}/"><img src="{{ assets_dir }}/img/logo_2.svg" width="200" alt="ViTables" id="logo"></a>
             </div>
             <div id="bs-navbar" class="collapse navbar-collapse justify-content-end">
                 <div class="navbar-nav">
-                  {% assign inactive = "nav-link" %}
-                  {% assign active = "nav-link active" %}
-                  {% if page.id == "index" %}
+                  {% set inactive = "nav-link" %}
+                  {% set active = "nav-link active" %}
+                  {% if id == "index" %}
                     <a class="{{ active }}" href="/">Home</a>
                   {% else %}
                     <a class="{{ inactive }}" href="/">Home</a>
                   {% endif %}
-                  {% if page.id == "development_index" %}
-                    <a class="{{ active }}" href="/Development">Development</a>
+                  {% if id == "development_index" %}
+                    <a class="{{ active }}" href="/development">Development</a>
                   {% else %}
-                    <a class="{{ inactive }}" href="/Development">Development</a>
+                    <a class="{{ inactive }}" href="/development">Development</a>
                   {% endif %}
-                  {% if page.id == "download_index" %}
-                    <a class="{{ active }}" href="/Download">Download</a>
+                  {% if id == "download_index" %}
+                    <a class="{{ active }}" href="/download">Download</a>
                   {% else %}
-                    <a class="{{ inactive }}" href="/Download">Download</a>
+                    <a class="{{ inactive }}" href="/download">Download</a>
                   {% endif %}
                   <div class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">Documentation</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="/Docs">What to Read</a>
-                      <a class="dropdown-item" href="/Docs/faq.html">FAQ</a>
-                      <a class="dropdown-item" href="/Docs/testimonials.html">Testimonials</a>
+                      <a class="dropdown-item" href="/docs">What to Read</a>
+                      <a class="dropdown-item" href="/docs/faq">FAQ</a>
+                      <a class="dropdown-item" href="/docs/testimonials">Testimonials</a>
                     </div>
                   </div>
-                  {% if page.id == "screenshots_index" %}
-                    <a class="{{ active }}" href="/Screenshots">Screenshots</a>
+                  {% if id == "screenshots_index" %}
+                    <a class="{{ active }}" href="/screenshots">Screenshots</a>
                   {% else %}
-                    <a class="{{ inactive }}" href="/Screenshots">Screenshots</a>
+                    <a class="{{ inactive }}" href="/screenshots">Screenshots</a>
                   {% endif %}
                 </div>
             </div>
         </div>
     </nav><!-- End of Menubar -->
     <div class="container" id="content" role="main" style="padding-top:20px">
-        {{ content }}
+        {{ contents | safe }}
+        {% if id == "screenshots_index" %}
+          {% include "_includes/gallery.njk" %}
+        {% endif %}
         <hr>
-        {% include footer.html %}
+        {% include "_includes/footer.njk" %}
     </div>
-    <script src="{{ page.assets_dir }}/jquery/jquery.min.js"></script>
-    <script src="{{ page.assets_dir }}/tether/js/tether.min.js"></script>
-    <script src="{{ page.assets_dir }}/js/bootstrap.bundle.min.js"></script>
-    {% if page.id == "screenshots_index" %}
-        {% include lightbox.html %}
+    <script src="{{ assets_dir }}/jquery/jquery.min.js"></script>
+    <script src="{{ assets_dir }}/bootstrap/bootstrap.bundle.min.js"></script>
+    {% if id == "screenshots_index" %}
+        {% include "_includes/lightbox.njk" %}
     {% endif %}
 </body>
 </html>

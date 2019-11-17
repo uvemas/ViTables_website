@@ -1,12 +1,12 @@
 ---
 title: Overview
-permalink: /
+permalink: false
 id: index
 date: 2017-08-27
 description: "ViTables 3.0 is a GUI for browsing files in PyTables/HDF5 format. Enjoy with it navigating smoothly tables with hundreds of millions of rows."
 tags: ViTables hdf5 viewer gui windows anaconda python
-assets_dir: assets
-rss_file: rss.xml
+assets_dir: /assets
+rss_file: /rss.xml
 ---
 
 # Overview
