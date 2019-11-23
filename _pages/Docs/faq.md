@@ -2,11 +2,9 @@
 title: FAQ
 permalink: Docs/faq
 id: docs_faq
-date: 2017-09-14
+date: 2017-11-23
 description: "Questions and Answers commonly asked about ViTables: license, bugs, latest versions, Anaconda and so on."
 tags: ViTables FAQ
-assets_dir: /assets
-rss_file: /rss.xml
 ---
 
 # FAQ

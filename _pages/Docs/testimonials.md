@@ -2,11 +2,9 @@
 title: Testimonials
 permalink: Docs/testimonials
 id: docs_testimonials
-date: 2017-08-27
+date: 2017-11-23
 description: "Find out what people is saying about ViTables."
 tags: ViTables testimonials
-assets_dir: /assets
-rss_file: /rss.xml
 ---
 
 This is a new section where I will collect the (good) things that users say about *ViTables*.

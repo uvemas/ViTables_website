@@ -2,11 +2,9 @@
 title: What to Read
 permalink: Docs
 id: docs_index
-date: 2017-08-27
+date: 2017-11-23
 description: "Here you can find the available documentation about ViTables: FAQ, Users' Guide (in PDF format) and testimonials."
 tags: ViTables FAQ PDF
-assets_dir: /assets
-rss_file: /rss.xml
 ---
 
 # What to read

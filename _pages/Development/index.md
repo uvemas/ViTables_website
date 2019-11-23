@@ -1,11 +1,9 @@
 ---
 title: Development
 id: development_index
-date: 2017-08-27
+date: 2017-11-23
 description: "Information about ViTables project development: GitHub repository, bugs tracker, statistics and ViTables Users group."
 tags: ViTables github project development repository bugs
-assets_dir: /assets
-rss_file: /feed.xml
 ---
 
 # Development

@@ -1,11 +1,9 @@
 ---
 title: Screenshots
 id: screenshots_index
-date: 2017-08-27
+date: 2017-11-23
 description: "Screenshots showing some interesting functionalities of ViTables, like table queries, plugins or management of attributes."
 tags: ViTables screenshots video
-assets_dir: /assets
-rss_file: /feed.xml
 ---
 
 # Screenshots and Videos

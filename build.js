@@ -23,6 +23,8 @@ const site = {
   site_author: 'Vicent Mas',
   site_email: 'vmas@vitables.org',
   site_generator: 'Metalsmith',
+  assets_dir: '/assets',
+  rss_file: '/feed.xml',
   generatorurl: 'https://metalsmith.io/'
 };
 
