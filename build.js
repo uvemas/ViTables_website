@@ -66,7 +66,7 @@ const feedConfig = {
   title: site.site_title,
   site_url: site.site_url,
   collection: 'pages',
-  destination: 'feed.xml'
+  destination: site.rss_file.substring(1)
 };
 
 // Sitemap configuration
@@ -78,7 +78,7 @@ const sitemapConfig = {
 // outputDir and file are paths relative to the source directory
 // includePaths are paths relative the the project root directory
 const sassConfig = {
-  outputDir: './assets',
+  outputDir: site.assets_dir.substring(1),
   file: './styles/main.scss',
   outputStyle: 'expanded',
   includePaths: ['./_sass', './node_modules/bootstrap/scss']
@@ -108,7 +108,7 @@ Metalsmith(__dirname)
 //            	pattern: '**/*.njk'}))
   .use(permalinks(permalinkConfig))
   .use(layouts(layoutConfig))
-  .use(assets({dest: 'assets'}))
+  .use(assets({dest: site.assets_dir.substring(1)}))
   .use(sass(sassConfig))
   .use(collections(collectionConfig))
   .use(rssfeed(feedConfig))
