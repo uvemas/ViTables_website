@@ -5,7 +5,7 @@ const Metalsmith = require('metalsmith');
 
 // The plugins to be applied
 const writemetadata = require('metalsmith-writemetadata');
-//const inplace = require('metalsmith-in-place');
+// const inplace = require('metalsmith-in-place');
 const mdit = require('metalsmith-markdownit');
 const layouts = require('metalsmith-layouts');
 const permalinks = require('metalsmith-permalinks');
@@ -35,9 +35,13 @@ const permalinkConfig = {
     lower: false
   }
 };
- 
-// Filter for the layout engine
-const year = function() {
+
+/**
+ * const year - A layout engine filter that returns the current year
+ *
+ * @returns {string}  the full year
+ */
+const year = function () {
   return (new Date()).getFullYear();
 };
 
@@ -51,6 +55,18 @@ const layoutConfig = {
       year: year
     }
   }
+};
+
+/**
+ * SASS configuration
+ * outputDir and file are paths relative to the source directory
+ * includePaths are paths relative the the project root directory
+ */
+const sassConfig = {
+  outputDir: site.assets_dir.substring(1),
+  file: './styles/main.scss',
+  outputStyle: 'expanded',
+  includePaths: ['./_sass', './node_modules/bootstrap/scss']
 };
 
 // Collections configuration
@@ -74,28 +90,18 @@ const sitemapConfig = {
   hostname: site.site_url
 };
 
-// SASS configuration
-// outputDir and file are paths relative to the source directory
-// includePaths are paths relative the the project root directory
-const sassConfig = {
-  outputDir: site.assets_dir.substring(1),
-  file: './styles/main.scss',
-  outputStyle: 'expanded',
-  includePaths: ['./_sass', './node_modules/bootstrap/scss']
-};
-
 // writemetadata configuration
 const writemetaConfig = {
   pattern: ['**/*'],
   bufferencoding: 'utf8'
 };
 
-//Server configuration
+// Server configuration
 const serverConfig = {
   port: 4000,
   verbose: true,
-  http_error_files: {404: "/404.html"}
-}
+  http_error_files: { 404: '/404.html' }
+};
 
 // Start the core and chain plugins to build the website
 Metalsmith(__dirname)
@@ -103,19 +109,18 @@ Metalsmith(__dirname)
   .clean(true)
   .source('./_pages')
   .destination('./_site')
-  .use(mdit({html: true}))
+  .use(mdit({ html: true }))
 //  .use(inplace({engine: 'nunjucks',
-//            	pattern: '**/*.njk'}))
+//                pattern: '**/*.njk'}))
   .use(permalinks(permalinkConfig))
   .use(layouts(layoutConfig))
-  .use(assets({dest: site.assets_dir.substring(1)}))
+  .use(assets({ dest: site.assets_dir.substring(1) }))
   .use(sass(sassConfig))
   .use(collections(collectionConfig))
   .use(rssfeed(feedConfig))
   .use(sitemap(sitemapConfig))
 //  .use(writemetadata(writemetaConfig))
   .use(serve(serverConfig))
-  .build(function(err, files) {  // this is the actual build step
-    if (err) {throw err;}        // throwing errors is mandatory
+  .build(function (err, files) { // this is the actual build step
+    if (err) { throw err; } // throwing errors is mandatory
   });
-
