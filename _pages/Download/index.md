@@ -11,15 +11,12 @@ tags: ViTables conda wheel sourceforge
 
 Stable versions
 ---------------
-The stable versions of *ViTables* (source and wheel packages) are available in its
-[SourceForge page](https://sourceforge.net/projects/vitables/files/ViTables-3.0.0/).
-
-The latest version is also available as a [conda package](https://anaconda.org/conda-forge/vitables) that can be installed with conda.
+The current stable version of *ViTables* (source and wheel packages) is available in its [PyPI page](https://pypi.org/project/ViTables/) and as a [conda package](https://anaconda.org/conda-forge/vitables).
 
 Sources repository
 ------------------
-In addition, you can get the latest (and possibly buggiest ;-) sources from the git repository if you follow 
-[these instructions](http://vitables.org/Docs/faq.html#how-can-i-use-the-latest-revision-from-the-git-repository).
+In addition, you can get the latest (and possibly buggiest ;-) sources from the git repository if you follow
+[these instructions](../Docs/faq/index.html#how-can-i-use-the-latest-revision-from-the-git-repository).
 
 GNU/Linux packages
 ------------------
@@ -32,7 +29,6 @@ Other sources
 -------------
 Last but not least, *ViTables* is included in a couple of scientific-oriented
 Python distributions, [WinPython](https://winpython.github.io/) and
-[Python(x,y)](http://python-xy.github.io/).
+[Python(x,y)](https://python-xy.github.io/).
 Also you can get the Windows binaries (and many other binaries for interesting
-software) from Christoph Gohlke's [website](http://www.lfd.uci.edu/~gohlke/pythonlibs/#vitables).
-
+software) from Christoph Gohlke's [website](https://www.lfd.uci.edu/~gohlke/pythonlibs/#vitables).

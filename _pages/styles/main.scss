@@ -39,12 +39,23 @@ border-bottom-color: $custom-border-color;
   border: none;
 }
 
-// Customise card-block border
+// Customise cards
 .card-block {
   margin: $custom-cb-margin;
 }
-.card-faq {
-  border-left: 4px solid $custom-border-color;
+.card-header {
+  background-color: $custom-ch-bg;
+}
+.card-info {
+  background-color: $custom-cs-bg;
+}
+.card-news {
+  background-color: $custom-cn-bg;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.card-shell {
+  background-color: $custom-cs-bg;
   font-family: $font-family-monospace;
 }
 
@@ -52,4 +63,3 @@ border-bottom-color: $custom-border-color;
 iframe {
   border: 0;
 }
-

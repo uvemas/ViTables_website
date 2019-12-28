@@ -14,14 +14,14 @@ If you are interested in how the *ViTables* development is going on you can visi
 - follow and report bugs using the [bug tracker](https://github.com/uvemas/ViTables/issues)
 
 - [browse the source code repository](https://github.com/uvemas/ViTables) via web
- 
+
 - view [project activity statistics](https://github.com/uvemas/ViTables/graphs/contributors)
 
-<div class="card" style="margin-bottom: 30px;">
+<div class="card card-info" style="margin-bottom: 30px;">
   <div class="card-header">
     Feature Requests, Comments and Kudos
   </div>
-  <div class="card-block card-info">
+  <div class="card-block">
     <p class="card-text">
     <em>Your feedback is important!</em> I'd really like to hear what you are doing with <em>ViTables</em>. It is the
     best way to adapt it to your needs. If you have feature requests, comments or kudos, please
