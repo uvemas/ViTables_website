@@ -7,14 +7,6 @@ description: "ViTables 3.0 is a GUI for browsing files in PyTables/HDF5 format. 
 tags: ViTables pytables hdf5 viewer gui windows anaconda python
 ---
 
-<div class="card card-news">
-  <div class="card-block">
-    <p class="card-text">
-    <strong>ViTables-3.0.2 has been released!</strong> Grab it from its <a href='https://pypi.org/project/ViTables/'>PyPI page</a> and enjoy browsing your PyTables files.
-    </p>
-  </div>
-</div>
-
 # Overview
 
 *ViTables* is a component of the [PyTables](https://www.pytables.org/) family. It is a GUI for browsing and editing
