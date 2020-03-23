@@ -42,7 +42,7 @@
     "popper.js": "^1.16.0"
   },
   "devDependencies": {
-    "acorn": "^7.1.0",
+    "acorn": "^7.1.1",
     "chai": "^4.2.0",
     "electron": "^7.1.2",
     "eslint": "^6.7.2",
