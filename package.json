@@ -1,33 +1,12 @@
 {
-  "name": "vitables_website",
-  "version": "1.0.0",
-  "description": "The Metalsmith version of the ViTables website.",
-  "main": "build.js",
+  "name": "metalsmith_website",
   "scripts": {
-    "start": "node ./build.js",
-    "debug": "DEBUG=metalsmith-in-place,metalsmith-layouts node ./build.js"
+    "build": "yarn node build.js"
   },
-  "author": {
-    "name": "Vicent Mas",
-    "email": "vmas@vitables.org"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/uvemas/ViTables_website.git"
-  },
-  "keywords": [
-    "ViTables",
-    "website"
-  ],
-  "bugs": {
-    "url": "https://github.com/uvemas/ViTables_website/issues"
-  },
-  "homepage": "https://github.com/uvemas/ViTables_website#readme",
-  "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.5.0",
-    "jstransformer-markdown": "^1.2.1",
+    "@metalsmith/permalinks": "^2.2.0",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
     "jstransformer-nunjucks": "^1.0.0",
     "metalsmith": "^2.3.0",
     "metalsmith-assets-improved": "^1.0.1",
@@ -36,25 +15,13 @@
     "metalsmith-in-place": "^4.4.1",
     "metalsmith-layouts": "^2.3.1",
     "metalsmith-markdownit": "^0.5.0",
-    "metalsmith-permalinks": "^2.2.0",
     "metalsmith-sass": "^1.7.0",
     "metalsmith-sitemap": "^1.2.2",
-    "popper.js": "^1.16.0"
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "acorn": "^7.1.1",
-    "chai": "^4.2.0",
-    "electron": "^8.5.2",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "kind-of": ">=6.0.3",
-    "metalsmith-serve": "0.0.7",
-    "metalsmith-writemetadata": "^0.4.5",
-    "minimist": ">=1.2.3",
-    "mocha": "^6.2.2"
+    "eslint": "^7.11.0",
+    "metalsmith-serve": "^0.0.7",
+    "metalsmith-writemetadata": "^0.4.5"
   }
 }

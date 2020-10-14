@@ -8,7 +8,7 @@ const writemetadata = require('metalsmith-writemetadata');
 // const inplace = require('metalsmith-in-place');
 const mdit = require('metalsmith-markdownit');
 const layouts = require('metalsmith-layouts');
-const permalinks = require('metalsmith-permalinks');
+const permalinks = require('@metalsmith/permalinks');
 const assets = require('metalsmith-assets-improved');
 const sass = require('metalsmith-sass');
 const collections = require('metalsmith-collections');
@@ -36,15 +36,6 @@ const permalinkConfig = {
   }
 };
 
-/**
- * const year - A layout engine filter that returns the current year
- *
- * @returns {string}  the full year
- */
-const year = function () {
-  return (new Date()).getFullYear();
-};
-
 // Configuration of the layout engine
 const layoutConfig = {
   directory: '_layouts/',
@@ -52,21 +43,24 @@ const layoutConfig = {
   pattern: ['**/*.html', '*.html'],
   engineOptions: {
     filters: {
-      year: year
+      year: function () {
+        return (new Date()).getFullYear();
+      }
     }
   }
 };
 
 /**
  * SASS configuration
- * outputDir and file are paths relative to the source directory
- * includePaths are paths relative the the project root directory
+ * outputDir is relative to the destination directory (i.e. _site/). If not exists it will be created
+ * file is relative to the source directory (i.e. _pages/)
+ * includePaths are paths relative to the project root directory
  */
 const sassConfig = {
   outputDir: site.assets_dir.substring(1),
   file: './styles/main.scss',
   outputStyle: 'expanded',
-  includePaths: ['./_sass', './node_modules/bootstrap/scss']
+  includePaths: ['./_sass', './_sass/bootstrap']
 };
 
 // Collections configuration
@@ -110,17 +104,17 @@ Metalsmith(__dirname)
   .source('./_pages')
   .destination('./_site')
   .use(mdit({ html: true }))
+  .use(permalinks(permalinkConfig))
 //  .use(inplace({engine: 'nunjucks',
 //                pattern: '**/*.njk'}))
-  .use(permalinks(permalinkConfig))
   .use(layouts(layoutConfig))
-  .use(assets({ dest: site.assets_dir.substring(1) }))
   .use(sass(sassConfig))
+  .use(assets({ dest: site.assets_dir.substring(1) }))
   .use(collections(collectionConfig))
   .use(rssfeed(feedConfig))
   .use(sitemap(sitemapConfig))
+//  .use(serve(serverConfig))
 //  .use(writemetadata(writemetaConfig))
-  .use(serve(serverConfig))
   .build(function (err, files) { // this is the actual build step
     if (err) { throw err; } // throwing errors is mandatory
   });

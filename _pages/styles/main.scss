@@ -5,7 +5,9 @@
 // Import from the _saas directory
 @import 'variables';
 
-// Import from the node_modules/bootstrap/scss directory
+// Using npm the bootstrap scss files are located under the node_modules/bootstrap/scss directory
+// With yarn v2 the bootstrap is zipped and located under the .yarn directory. In order to use it
+// we have extracted node_modules/bootstrap/scss and copied it in _sass/bootstrap
 @import 'bootstrap';
 
 // Customise nav-item and content font sizes
