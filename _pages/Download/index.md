@@ -2,7 +2,7 @@
 title: How to get it
 permalink: Download
 id: download_index
-date: 2017-11-23
+date: 2025-01-12
 description: "Download ViTables 3.0 from here in a variety of formats: source packages, wheels and conda packages. Or get the latest sources from the repo."
 tags: ViTables conda wheel sourceforge
 ---
@@ -11,7 +11,7 @@ tags: ViTables conda wheel sourceforge
 
 Stable versions
 ---------------
-The current stable version of *ViTables* (source and wheel packages) is available in its [PyPI page](https://pypi.org/project/ViTables/) and as a [conda package](https://anaconda.org/conda-forge/vitables).
+The current stable version of *ViTables* is available in its [PyPI page](https://pypi.org/project/ViTables/) and as a [conda package](https://anaconda.org/conda-forge/vitables).
 
 Sources repository
 ------------------
@@ -25,10 +25,3 @@ aren't always up to date. Some of these distros are OpenSUSE, Mandriva,
 Arch Linux, Debian, Ubuntu, Gentoo, Trisquel and Fink. Just use the distro's
 package manager in order to find and install *ViTables*.
 
-Other sources
--------------
-Last but not least, *ViTables* is included in a couple of scientific-oriented
-Python distributions, [WinPython](https://winpython.github.io/) and
-[Python(x,y)](https://python-xy.github.io/).
-Also you can get the Windows binaries (and many other binaries for interesting
-software) from Christoph Gohlke's [website](https://www.lfd.uci.edu/~gohlke/pythonlibs/#vitables).

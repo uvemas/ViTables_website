@@ -23,5 +23,6 @@
     "eslint": "^7.11.0",
     "metalsmith-serve": "^0.0.7",
     "metalsmith-writemetadata": "^0.4.5"
-  }
+  },
+  "packageManager": "yarn@4.6.0"
 }

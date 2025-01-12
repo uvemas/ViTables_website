@@ -2,8 +2,8 @@
 title: Overview
 permalink: false
 id: index
-date: 2017-11-23
-description: "ViTables 3.0 is a GUI for browsing files in PyTables/HDF5 format. Enjoy with it navigating smoothly tables with hundreds of millions of rows."
+date: 2025-01-12
+description: "ViTables 3.1 is a GUI for browsing files in PyTables/HDF5 format. Enjoy with it navigating smoothly tables with hundreds of millions of rows."
 tags: ViTables pytables hdf5 viewer gui windows anaconda python
 ---
 
@@ -11,7 +11,7 @@ tags: ViTables pytables hdf5 viewer gui windows anaconda python
 
 *ViTables* is a component of the [PyTables](https://www.pytables.org/) family. It is a GUI for browsing and editing
 files in both PyTables and [HDF5](https://www.hdfgroup.org/solutions/hdf5/) formats. It is developed using
-[Python](https://www.python.org/) and [PyQt5](https://www.riverbankcomputing.com/software/pyqt/intro) (the Python
+[Python](https://www.python.org/) and [PyQt](https://www.riverbankcomputing.com/software/pyqt/intro) (the Python
 bindings to [Qt](https://www.qt.io/)), so it can run on any platform that supports these components.
 
 *ViTables* capabilities include easy navigation through the data hierarchy, displaying of real data and

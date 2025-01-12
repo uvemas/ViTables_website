@@ -2,14 +2,13 @@
 title: FAQ
 permalink: Docs/faq
 id: docs_faq
-date: 2017-11-23
+date: 2025-01-12
 description: "Questions and Answers commonly asked about ViTables: license, bugs, latest versions, Anaconda and so on."
 tags: ViTables FAQ
 ---
 
 # FAQ
 - [How is <em>ViTables</em> licensed?](#license)
-- [Oops! I've got a problem. How can I get support?](#support)
 - [I've found a bug or I want to request a new feature. What should I do?](#bug-feature)
 - [How can I use the latest revision from the git repository?](#latest)
 - [Are there graphical installers for Windows and Mac OS X platforms?](#installers)
@@ -20,16 +19,6 @@ tags: ViTables FAQ
 ## How is <em>ViTables</em> licensed?
 
 It has a [GPLv3](http://www.gnu.org/licenses/gpl.html) license.
-
-<a name="support"></a>
-## Oops! I've got a problem. How can I get support?
-
-It's always worth to check the messages posted to the
-[ViTables users' group](https://groups.google.com/forum/#!forum/vitables-users): searching the list is a great way
-to get your questions answered. You can search the list using its web interface or from the
-[Gmane interface](http://dir.gmane.org/gmane.comp.python.pytables.vitables.user). If you don't find an answer to your
-question I strongly recommended you to subscribe to the users' group and ask for help there.
-Probably some subscriber (*ViTables* developer or user) will be able to help you.
 
 <a name="bug-feature"></a>
 ## I've found a bug or I want to request a new feature. What should I do?
@@ -106,22 +95,4 @@ pip it is best to use an isolated conda environment. Only after conda has
 been used to install as many packages as possible should pip be used to
 install any remaining software.</q>
 
-So the following should work:
-
-<div class="card card-shell" style="margin-bottom: 1em;">
-  <div class="card-block">
-    (Anaconda3) > conda create --name vitables pytables pyqt<br>
-    (Anaconda3) > conda activate vitables<br>
-    (vitables) > pip install ViTables
-  </div>
-</div>
-
-If it still fails, download the tarball, uncompress it and proceed as you would do in a typical installation from sources:
-
-<div class="card card-shell" style="margin-bottom: 1em;">
-  <div class="card-block">
-    (Anaconda3) > conda create --name vitables pytables pyqt<br>
-    (Anaconda3) > conda activate vitables<br>
-    (vitables) > python setup.py install
-  </div>
-</div>
+If it still fails, download the tarball from the git repository, uncompress it and proceed as you would do in a typical installation from sources.

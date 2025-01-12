@@ -3,5 +3,9 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .eslintrc
+.yarnrc.yml
+package-lock.json
+website.code-workspace
+*.cjs
 vendor
 node_modules
